@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
-  branch: main # ya master, jo aapke github repo mein hai
+  repo: shubhampriyesh24-oss/jbic
+  branch: main
 
 media_folder: "public/images"
 public_folder: "images"
@@ -8,7 +9,7 @@ public_folder: "images"
 collections:
   - name: "school"
     label: "School Content"
-    folder: "content/school"
+    folder: "frontend/content/school"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
