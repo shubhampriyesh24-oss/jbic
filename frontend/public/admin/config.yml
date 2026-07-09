@@ -1,17 +1,15 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # ya master, jo aapke github repo mein hai
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/images"
+public_folder: "images"
 
 collections:
   - name: "school"
     label: "School Content"
-    folder: "content"
+    folder: "content/school"
     create: true
-    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Principal Message", name: "message", widget: "text" }
-      - { label: "Upload Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
