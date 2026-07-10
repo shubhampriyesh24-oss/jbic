@@ -3,13 +3,13 @@ backend:
   repo: shubhampriyesh24-oss/jbic
   branch: main
 
-media_folder: "public/images"
-public_folder: "images"
+media_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "school"
     label: "School Content"
-    folder: "frontend/content/school"
+    folder: "content/school"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
