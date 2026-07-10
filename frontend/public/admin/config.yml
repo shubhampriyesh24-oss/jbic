@@ -3,7 +3,7 @@ backend:
   repo: shubhampriyesh24-oss/jbic
   branch: main
 
-media_folder: "images"
+media_folder: "public/images"
 public_folder: "/images"
 
 collections:
