@@ -6,7 +6,33 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Decap CMS script -->
+    <!-- Decap CMS Script -->
+    <script>
+      window.CMS_CONFIG = {
+        config: {
+          backend: {
+            name: "git-gateway",
+            repo: "shubhampriyesh24-oss/jbic",
+            branch: "main",
+            base_url: "https://jbic.netlify.app"
+          },
+          media_folder: "public/images",
+          public_folder: "/images",
+          collections: [
+            {
+              name: "school",
+              label: "School Content",
+              folder: "content/school",
+              create: true,
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Body", name: "body", widget: "markdown" }
+              ]
+            }
+          ]
+        }
+      };
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
