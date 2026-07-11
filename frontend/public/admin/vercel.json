@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/admin/(.*)",
+      "destination": "/frontend/public/admin/$1"
+    }
+  ]
+}
